@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Chat </title>
+
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/chat.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          Let's go code? Chat-dev
+          <i class="fas fa-laptop-code"></i>
+        </h1>
+      </header>
+
+      <div class="sidebarAndChatForm">
+        <main class="main">
+          <div class="sidebar">
+            <button type="button" class="leaveChat">
+              <a href="./index.html">Leave chat</a>
+            </button>
+            <h3><i class="fas fa-comments"></i> Room Name:</h3>
+            <h2 id="room-name"></h2>
+            <h3><i class="fas fa-users"></i> Users</h3>
+            <ul id="users"></ul>
+          </div>
+
+          <div class="chat-message"></div>
+        </main>
+
+        <div class="chat-form-container">
+          <form id="chat-form">
+            <input
+             type="text"
+             id="msg"
+             placeholder="Enter Message"
+             required
+             autocomplete="off"
+             >
+
+             <button class="btn"><i class="fas fa-paper-plane"></i> Send </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous">
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

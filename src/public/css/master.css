@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  background: var(--background);
+}
+
+.form {
+  display: grid;
+  place-items: center;
+}
+
+.container #title {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--header);
+}
+
+.form main {
+  background: var(--dark-slate-blue);
+  width: 60%;
+  height: 300px;
+}
+
+.form main form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form main form label {
+  font-size: 20px;
+  color: var(--white);
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form main form input, select {
+  width: 80%;
+  padding: 10px;
+  border: none;
+}
+
+.form main form button {
+  width: 30%;
+  margin-top: 2rem;
+  height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: var(--header);
+}

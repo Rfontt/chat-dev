@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Home </title>
+
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          Chat-Dev
+          <i class="fas fa-laptop-code"></i>
+        </h1>
+      </header>
+
+      <h1 id="title">Fill in the details below</h1>
+      <div class="form">
+        <main>
+          <form action="chat.html">
+            <label for="codName">Cod-name:</label>
+            <input type="text" id="codName" name="codName"
+             placeholder="Your cod-name" required>
+
+            <label for="programmingLanguage ">Programming language:</label>
+            <select class="room" name="room" id="room">
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="Java">Java</option>
+              <option value="Python">Python</option>
+            </select>
+
+            <button type="submit" name="button">Login</button>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+  width: 100%;
+  background: var(--header);
+  display: grid;
+  place-items: center;
+  height: 50px;
+}
+
+header h1 {
+  color: var(--white);
+  font-family: 'Dela Gothic One', cursive;
+}
+
+:root {
+  --dark-slate-blue: #483D8B;
+  --background: #DCDCDC;
+  --white: #FFF;
+  --header: #191970;
+  --slate-blue: #6A5ACD;
+}
